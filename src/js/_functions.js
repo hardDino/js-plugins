@@ -20,6 +20,9 @@ console.log(mobileCheck())
 // Фикс фулскрин-блоков
 // import './functions/fix-fullheight';
 
+//Реализация аккордеона
+import { akkordeon1, akkordeon2 } from './functions/akkordeon';
+
 // Реализация бургер-меню
 //import { burger } from './functions/burger';
 

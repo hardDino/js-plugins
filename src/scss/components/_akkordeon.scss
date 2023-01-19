@@ -1,11 +1,9 @@
-.custom {
+.akkordeon {
+  margin: 0 0 10px 0;
+
   &__list {
     list-style: none;
     width: 400px;
-  }
-
-  &__item {
-    margin: 0 0 10px 0;
   }
   
   &__control {
@@ -33,6 +31,7 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
+    transition: transform .5s ease-in-out;
     background-color: #bfbfbf;
 
     &::before {
@@ -60,23 +59,19 @@
     overflow: hidden;
     max-height: 0;
     will-change: max-height;
-    transition: all .5s ease-in-out;
+    transition: all var(--akkordeon-time) ease-in-out;
     box-sizing: content-box;
   }
 }
 
-.custom__icon {
-  transition: transform .5s ease-in-out;
-}
-
-.open {
-  .custom__icon {
+.is-open {
+  .akkordeon__icon {
     transform: rotate(45deg);
   }
 }
 
-.open {
-  .custom__content {
+.is-open {
+  .akkordeon__content {
     opacity: 1;
     padding: 20px;
   }
